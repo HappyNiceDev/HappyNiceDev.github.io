@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Registro de Minutas</title>
-    <link rel="styles_index" href="Primer.css">
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body id="light-mode">
 <div id="cuerpo">
-    
-<div id="titulo">
-Registro de minutas de reuniones realizadas
-</div>
+    <div id="titulo">
+        <p>Registro de minutas de reuniones realizadas</p>
+        </div>
+    <nav>
+    <!--     
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+    -->
+        <button onclick="toggleMode()">Cambiar Modo</button>
+        <script src="script.js"></script>
+    </nav>
 
+<div id="cuadro">
+    Registro de minutas de reuniones realizadas
+</div>
+    
 <footer>
     <p>Author: HappyNiceDev</p>
 </footer>
