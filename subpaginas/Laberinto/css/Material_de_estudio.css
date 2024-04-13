@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+#cuerpo {
+	background-color: #000;
+	background-image: url(../Imagenes/1.jpg);
+	background-attachment: fixed;
+}
+
+#cuerpo #pagina {
+	height: 2200px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	border: thick dotted #C63;
+	background-color: #6D353E;
+}
+
+#cuerpo #pagina #contador {
+	text-align: center;
+	float: right;
+	height: auto;
+	width: 118px;
+	margin-top: 16%;
+	margin-right: 2%;
+	margin-bottom: 1%;
+	margin-left: auto;
+}

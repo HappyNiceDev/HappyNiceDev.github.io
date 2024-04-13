@@ -1,0 +1,88 @@
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Documento sin título</title>
+
+<script type="text/javascript" src="menu.js">
+</script>
+
+<script type="text/javascript">
+	<!--
+	//Creo una instancia de la clase Menu
+	var menu1= new Desplegable();
+	
+	//Creo una propiedad "items", la cual es el array de ítems que tendrá nuestro menu, la creo fuera de la clase ya que nos permite personalizar el menu sin tener que editar la clase.
+	menu1.items = new Array(["item-0","javascript:;","A"],["item-1","javascript:;","B"],["item-2","javascript:;","R"],["item-3","javascript:;","S"]);
+	//Creo una propiedad "suitems", la cual es el array de sub ítems que apareceran dentro de cada ítem.
+	menu1.subitems = new Array([["subitem-0","javascript:Adventure_Of_Tom_Sawyer();","Adventure  of Tom..."]],[["subitem-0","javascript:Bomberman();","Bomberman"],["subitem-0","javascript:BOMBERMAN_II();","Bomberman II"]],[["subitem-0","javascript:Race_America();","Race America"]],[["subitem-0","javascript:Super_Mario_Bros();","Super Mario Bros"]]);
+	-->
+</script>
+
+<style type="text/css">
+
+	/* Personalizo el aspecto del menú */
+	body { font-family: "Trebuchet MS"; }
+	#menu { width: 175px; padding: 0; border-bottom: solid #5cc4ff 1px; }
+	#menu div { border-top: solid #5cc4ff 1px; background: #00CCFF; }/*el segundo color es el del fondo de los botones*/
+	#menu a { padding-left: 77px; text-decoration: none; color: #00598c; font-weight: 700; display: block; width: 98px; font-size: 1em; }
+	#menu a:hover { background: #933; }/* el color de la seleccion*/
+	#menu ul { margin: 5; padding: 0; font-size: 0.9em; background: #f0faff; overflow: hidden; }
+	#menu li { list-style: none; font-size: 0.8em; padding: 0; }
+	#menu li a { padding-left: 5px; width: 125px; }
+	#menu li a:hover { color: #0086d2; background: #daf3ff; }
+
+</style>
+</head>
+
+<body bgcolor="#00CCFF" onLoad="menu1.escribeacordeon('menu',22,5);">
+<div id="menu">
+<font color="#FF0000">
+<b>
+<p>Puede jugar con solo hacer click sobre el juego que le guste.<br>
+Estos mismos estan ordenados alfabeticamente.
+</p>
+</b>
+</font>
+<p>
+<p>
+
+
+
+
+<script language="javascript">
+function Bomberman()
+{
+window.history.back();
+setTimeout('window.parent.frames[2].Bomberman();','0.1'*1000);	
+}
+
+function Super_Mario_Bros()
+{
+window.history.back();
+setTimeout('window.parent.frames[2].Super_Mario_Bros();','0.1'*1000);	
+}
+
+function Race_America()
+{
+window.history.back();
+setTimeout('window.parent.frames[2].Race_America();','0.1'*1000);	
+}
+
+function BOMBERMAN_II()
+{
+window.history.back();
+setTimeout('window.parent.frames[2].BOMBERMAN_II();','0.1'*1000);	
+}
+
+function Adventure_Of_Tom_Sawyer()
+{
+window.history.back();
+setTimeout('window.parent.frames[2].Adventure_Of_Tom_Sawyer();','0.1'*1000);	
+}
+</script>
+
+
+</body>
+</html>

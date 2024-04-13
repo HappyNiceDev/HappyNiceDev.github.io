@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+#cuerpo {
+	text-align: center;
+	height: auto;
+	width: 1000px;
+	background-attachment: fixed;
+	background-color: #000;
+	background-image: url(../Imagenes/2.jpg);
+}
+#cuerpo #pagina {
+	font-size: 24px;
+	height: 1000px;
+	width: 98%;
+	margin-right: auto;
+	margin-left: auto;
+	color: #FFF;
+}
+#cuerpo #pagina #titulo {
+	font-size: 36px;
+	color: #CF0;
+	font-family: "Comic Sans MS", cursive;
+	text-align: center;
+	height: 8%;
+	width: 100%;
+	padding-top: 2%;
+}
+
+#cuerpo #pagina #descargas {
+	height: auto;
+	width: 100%;
+	margin-top: 4%;
+}
+#cuerpo #pagina #descargas #office {
+	text-align: center;
+	height: auto;
+	width: 92%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#cuerpo #pagina #descargas #office A:link {
+	text-decoration:none;
+	color:#FF9;
+}
+#cuerpo #pagina #descargas #office A:active {
+	text-decoration:none;
+	color:#FF9;
+}
+#cuerpo #pagina #descargas #office A:visited {
+	text-decoration:none;
+	color:#FF9;
+}
+#cuerpo #pagina #descargas #office A:hover {
+	color: #00AA00;
+	font-weight: bold;
+}
+#cuerpo #pagina #descargas #office #office_titulo {
+	color: #F90;
+	font-size: 32px;
+	height: auto;
+	width: 100%;
+}
+
+#cuerpo #pagina #descargas #office #links {
+	height: auto;
+	width: 100%;
+	padding-top: 2%;
+}
+#cuerpo #pagina #descargas #office #links ol #num {
+	color: #F00;
+}
+#cuerpo #pagina #contador {
+	text-align: center;
+	float: right;
+	height: auto;
+	width: 118px;
+	margin-top: 30%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	margin-left: auto;
+}
