@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="By Krasata" />
+<meta name="description" content="Olivar Catering" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bienvenidos a Olivar Catering</title>
+<link href="css/home.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="cuerpo" onload="javascript:abre_inicio()">
+<div id="pagina">
+<div id="logo">
+<img src="Imagenes/logo_negro.jpg">
+</div>
+<div id="barra">
+<div id="menu">
+<div id="boton_inicio" onclick="javascript:abre_inicio();">Inicio</div>
+<div id="boton_menues" onclick="javascript:abre_menues();">Menu&eacute;s</div>
+<div id="sub_menu"></div>
+<div id="boton_contact" onclick="javascript:abre_contact();">Contactanos</div>
+</div>
+</div>
+<div id="datos"><img id="loading" src="Imagenes/loading.gif" /></div>
+<div id="borde_inferior">
+</div>
+</div>
+<script language="javascript">
+
+function abre_inicio()
+{
+	document.getElementById('datos').innerHTML="<div id='entrada'>"
+	+ "<p>Bienvenidos a Nuestro espacio, al mundo de &#34;Olivar Catering&#34;.<br>A partir de ahora podr&aacute;s contar con un servicio<br>&uacute;nico para tus eventos y reuniones!</p>Comiendo como en casa: casero, rico y abundante!<br>Olivar te ofrece los siguientes servicios para tu evento<br>Pizza Party, Noches de Sushi, Cocina Árabe.<br>Tambi&eacute;n catering completo para eventos sociales."
+	+ "</div>";
+	document.getElementById('boton_inicio').style.color="#FF0";
+	document.getElementById('sub_menu').innerHTML = "";
+	document.getElementById('boton_menues').style.color="#FFF";
+	document.getElementById('boton_contact').style.color="#FFF";
+}
+function abre_menues()
+{
+	document.getElementById('sub_menu').innerHTML="<div id='pizza' onclick='javascript:abre_pizza();'>Pizza party</div>"
+	+ "<div id='sushi'  onclick='javascript:abre_sushi();'>Sushi</div>"
+	+ "<div id='comidas' onclick='javascript:abre_comidas();'>Comida arabe</div>"
+	+ "<div id='eventos' onclick='javascript:abre_eventos();'>Eventos sociales</div>";
+	document.getElementById('boton_menues').style.color="#FF0";
+	document.getElementById('boton_inicio').style.color="#FFF";
+	document.getElementById('boton_contact').style.color="#FFF";
+}
+function abre_pizza()
+{
+	document.getElementById('datos').innerHTML="<div id='pizza_texto'><p>Pizza Party en tu casa o en tu evento!</p><p>Tenemos 15 variedades de pizzas para ofrecerte : Muzzarella, Fugazeta, Jam&oacute;n y Morrones, Capresee, Palmitos con Salsa Golf, Huevo, Choclo, Salchichas, Papas Pay, R&uacute;cula, Napolitana, 4 Quesos, Calabresa, Anchoas, Olivar* y Faina.</p><p>Opci&oacute;n: pizza a la piedra (horno de barro), al molde o a la parrilla.</p><p>*Olivar: Jam&oacute;n crudo, tomates secos, parmesano rallado y aceite de oliva.</p><p>Armalo a tu medida!! con opciones de entradas y postres.</p><p>(Entradas: Empanas o Focaccias / Postres: Pizzas Dulces o Panqueques)</p>"
+	+"<div id='precios'>"
+	+"<div id='fila1'><div id='columna1'>Men&uacute;es</div><div id='columna2'>Precio</div></div>"
+	+"<div id='fila2'><div id='columna1'>Pizza Party&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15 variedades</div><div id='columna2'>$35<br>p/persona</div></div>"
+	+"<div id='fila3'><div id='columna1'>Pizza Party&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15 variedades + Entrada + Postres</div><div id='columna2'>$50<br>p/persona</div></div>"
+	+"</div>"
+	+"<p>Nuestro servicio incluye: Vajilla y servicios de mozos.<br>** M&iacute;nimo de 30 Comensales.</p></div>"
+	+ "<div id='galeria'>"
+	+ "<div id='vista_previa'>"
+	+ "<img id='img_previa' onmouseover='javascript:pizza_img1();' src='Imagenes/pizzas/1.jpg' />"
+	+ "<img id='img_previa' onmouseover='javascript:pizza_img2();' src='Imagenes/pizzas/2.jpg' />"
+	+ "<img id='img_previa' onmouseover='javascript:pizza_img3();' src='Imagenes/pizzas/3.jpg' />"
+	+ "<img id='img_previa' onmouseover='javascript:pizza_img4();' src='Imagenes/pizzas/4.jpg' />"
+	+ "<img id='img_previa' onmouseover='javascript:pizza_img5();' src='Imagenes/pizzas/5.jpg' />"
+	+ "<img id='img_previa' onmouseover='javascript:pizza_img6();' src='Imagenes/pizzas/6.jpg' />"
+	+ "<img id='img_previa' onmouseover='javascript:pizza_img7();' src='Imagenes/pizzas/7.jpg' />"
+	+ "<img id='img_previa' onmouseover='javascript:pizza_img8();' src='Imagenes/pizzas/8.jpg' />"
+	+ "</div>"
+	+ "<div id='vista_grande'>"
+	+ "</div>"
+	+ "</div>";
+}
+function abre_sushi()
+{
+	document.getElementById('datos').innerHTML="<div id='sushi_texto'>Olivar tambi&eacute;n te ofrece Catering de Sushi a tu gusto.<br>Te ofrecemos el producto finalizado o la mano de obra de nuestro cocinero especializado.<br><a href='#' onclick='javascript:abre_contact();' style='color:#996'>Consultanos por las opciones de Men&uacute;.</a></div>"
+	+ "<div id='galeria'>"
+	+ "<div id='vista_previa'>"
+	+ "<img id='img_previa' onmouseover='javascript:sushi_img1();' src='Imagenes/sushi/1.jpg' />"
+	+ "<img id='img_previa' onmouseover='javascript:sushi_img2();' src='Imagenes/sushi/2.jpg' />"
+	+ "</div>"
+	+ "<div id='vista_grande'>"
+	+ "</div>"
+	+ "</div>";
+}
+function abre_comidas()
+{
+	document.getElementById('datos').innerHTML="<div id='comidas_texto'><p>Una noche diferente...Una noche en el mundo Arabe en tu casa o en tu evento!<br>Consultanos por la variedad de nuestras entradas y platos, desde las famosas empanadas &aacute;rabes (al horno de barro) hasta los platos calientes t&iacute;picos del oriente.<br>Armalo como quieras y no te olvides de pedirnos los dulces &aacute;rabes!</p><p>Opciones de entrada: Hummus - Tabbuli - Keppe naie - Labneh - Mlladra - Ensalada Bel&eacute;n - Batersh o Baba ganoush - Aceitunas negras y Queso - Basterm&aacute; - Hobs: T&iacute;pico pan &Aacute;rabe al Horno de barro.<br>Opciones calientes: Empanadas &aacute;rabes abiertas/cerradas (sfihas) - Keppe frito /horno - Syah - Arroz a la persa - Malfuf - Warak Inab Mahshi - Shish Taouk de carne o pollo con salsa tarator - Lahem Meshwe<br>Opciones Dulces: Baklawa - Namura - Knaffe - Mamul</p><p><a href='#' onclick='javascript:abre_contact();' style='color:#996'>Consultanos por los precios y opciones! </a></p>Estamos a tu disposici&oacute;n para que vivas ese momento &uacute;nico e irrepetible acompa&ntilde;ado con lo mejor!<br>De regalo en tu men&uacute; An&iacute;s o Caf&eacute; &Aacute;rabe.</p><p>Adicional: Alquiler de Narguiles.<br>*M&iacute;nimo de 30 comensales.</p></div>"
+	+ "<div id='galeria'>"
+	+ "<div id='vista_previa'>"
+	+ "<img id='img_previa' onmouseover='javascript:comidas_img1();' src='Imagenes/comidas_arabes/1.jpg' />"
+	+ "<img id='img_previa' onmouseover='javascript:comidas_img2();' src='Imagenes/comidas_arabes/2.jpg' />"
+	+ "<img id='img_previa' onmouseover='javascript:comidas_img3();' src='Imagenes/comidas_arabes/3.jpg' />"
+	+ "</div>"
+	+ "<div id='vista_grande'>"
+	+ "</div>"
+	+ "</div>";
+}
+function abre_eventos()
+{
+	document.getElementById('datos').innerHTML="<div id='eventos_texto'>Olivar Catering te ofrece la organizaci&oacute;n completa de tu evento<br>(Casamiento, Bautismo, 15 A&ntilde;os, Aniversarios, Despedidas, etc).<br>Encontraras una amplia variedad de ofertas gastron&oacute;micas y precios.<p>No dudes en contactarnos para hacerte llegar un presupuesto.</p></div>";
+}
+function abre_contact()
+{
+	document.getElementById('datos').innerHTML="<div id='informacion'>"
++"<div id='direcciones'>Cel. +54 9 11 6508.4566<br>Tel.Fax. +54 11 4202.4336<br>consultas@olivarcatering.com</div>"
++"<div id='formulario'><form action='mailto:consultas@olivarcatering.com' method='post' enctype='text/plain'><table>"
+	+ "<td width='104' height='42' align=RIGHT>Nombre:</td>"
+    + "<td align='left' width='247'><input type='text' size=36 name='nombre'></td>"
+	+ "<tr>"
+	+ "<td height='39' align=RIGHT>E-mail:</td>"
+	+ "<td align='left'><input type='text' size=36 name='direccion'></td>"
+	+ "<tr>"
+    + "<td height='100' align=RIGHT>Comentatio:</td>"
+    + "<td align='left'><textarea rows=5 cols=30 name='Comentarios'></textarea></td>"
+	+ "</table>"
+	+ "<input type='reset' value='Borrar todo'>"
+	+ "<input type='submit' value='Enviar'>"
+	+ "</FORM></div>"
+	+"<a href='http://www.facebook.com/pages/Olivar-Catering/237019116389674'><img id='facebook' src='Imagenes/facebook.png'></a></div>";
+	document.getElementById('boton_contact').style.color="#FF0";
+	document.getElementById('sub_menu').innerHTML = "";
+	document.getElementById('boton_inicio').style.color="#FFF";
+	document.getElementById('boton_menues').style.color="#FFF";
+}
+function pizza_img1()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/pizzas/1.jpg' />"
+}
+function pizza_img2()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/pizzas/2.jpg' />"
+}
+function pizza_img3()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/pizzas/3.jpg' />"
+}
+function pizza_img4()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/pizzas/4.jpg' />"
+}
+function pizza_img5()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/pizzas/5.jpg' />"
+}
+function pizza_img6()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/pizzas/6.jpg' />"
+}
+function pizza_img7()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/pizzas/7.jpg' />"
+}
+function pizza_img8()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/pizzas/8.jpg' />"
+}
+function sushi_img1()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/sushi/1.jpg' />"
+}
+function sushi_img2()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/sushi/2.jpg' />"
+}
+function comidas_img1()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/comidas_arabes/1.jpg' />"
+}
+function comidas_img2()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/comidas_arabes/2.jpg' />"
+}
+function comidas_img3()
+{
+	document.getElementById('vista_grande').innerHTML="<img id='img_grande' src='Imagenes/comidas_arabes/3.jpg' />"
+}
+</script>
+
+</body>
+</html>
